@@ -4,10 +4,22 @@ import styles from "@styles/Layout1.module.css";
 import Footer from "@components/Footer";
 
 // LAYOUT 1
-export default function Lay1({nocontent, children}){
+export default function Lay1({
+  nocontent, 
+  logo,
+  name,
+  subname,
+  links,
+  children
+}){
   return (
     <>
-      <Sidebar />
+      <Sidebar 
+        logo={logo}
+        name={name}
+        submenu={subname}
+        links={links}
+      />
       
       {/* CONTENT SECTION */}
       <section className={styles['home-section']}>
@@ -21,27 +33,14 @@ export default function Lay1({nocontent, children}){
 }
 
 // SIDEBAR
-function Sidebar(){
+function Sidebar(props){
   const [isOpen, setIsOpen] = useState(false);
   const toogleSidebar = () => {
     const rev = !isOpen;
     setIsOpen(rev);
   }
 
-  //  DATA
-  const lay_data = {
-    logo: {
-      logoURL: "",
-      txtALT: "",
-    },
-    name: "LEARN TOEFL",
-    subname: "by Alifata",
-    links: [
-      {name: "Home", url: "/toefl", icon: "bx bx-book"}
-    ]
-  }
-
-  const { logo, name, subname, links} = lay_data;
+  const { logo, name, subname, links } = props;
 
  return (
    <section 
@@ -54,14 +53,22 @@ function Sidebar(){
       toogleSidebar={toogleSidebar}
      /> 
      <ul className={styles['nav-links']}>
-        {links.map(link => (
-          <NavLink 
+        {links?.map(link => {
+          if(link.url != null) return (
+            <NavLink 
+              key={link.name}
+              name={link.name}
+              url={link.url}
+              icon={link.icon}
+            />
+          )
+          return <NavLinkMenu
+            key={link.name}
             name={link.name}
-            url={link.url}
             icon={link.icon}
+            submenu={link.submenu}
           />
-        ))}
-       <NavLinkMenu />
+        })}
        <ProfileDetails />
      </ul>
    </section>
@@ -114,7 +121,7 @@ function NavLink({name, url, icon}){
 }
 
 // NAVLINK WITH SUB MENU
-function NavLinkMenu(){
+function NavLinkMenu({name, icon, submenu}){
  const [showMenu, setShowMenu] = useState(false);
 
  function toogleShowMenu(){
@@ -125,10 +132,10 @@ function NavLinkMenu(){
  return (
    <li className={showMenu ? styles['showMenu']: ''}>
      <div className={styles['iocn-link']}>
-       <a href="#">
-         <i className='bx bx-collection'></i>
+       <a href={`#${name}`}>  
+         <i className={icon}></i>
          <span className={styles['link-name']}>
-          Category
+          {name}
          </span>
        </a>
        <i className={`bx bxs-chevron-down ${styles['arrow']}`} 
@@ -137,13 +144,17 @@ function NavLinkMenu(){
 
      <ul className={styles['sub-menu']}>
        <li>
-        <a className={styles['link-menu']} href="#">
-          Category
+        <a className={styles['link-name']} href={`#${name}`}>
+          {name}
         </a>
        </li>
-       <li><a href="#">HTML & CSS</a></li>
-       <li><a href="#">JavaScript</a></li>
-       <li><a href="#">PHP & MySQL</a></li>
+       {submenu?.map((menu) => (
+        <li key={menu.name}>
+          <NextLink href={menu.url}>
+            {menu.name}
+          </NextLink>
+        </li>
+       ))}
      </ul>
    </li>
  );
