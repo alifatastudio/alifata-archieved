@@ -3,3 +3,17 @@
 
 📒 USEFUL
 1. https://css.glass/
+2. https://gradients.shecodes.io/
+
+📒 AUTH
+1. https://github.com/sairajchouhan/nextjs-firebase-auth
+2. https://www.youtube.com/watch?v=IPnyqq7w1oY
+
+📒 FORM 
+1. https://codepen.io/KY64/pen/jJdwBp
+
+📒 BUTTON
+1. https://www.w3schools.com/howto/howto_css_icon_buttons.asp
+
+📒 LOADER
+1. https://loading.io/css/

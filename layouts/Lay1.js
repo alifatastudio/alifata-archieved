@@ -2,6 +2,7 @@ import { useState } from "react";
 import NextLink from "next/link";
 import styles from "@styles/Layout1.module.css";
 import Footer from "@components/Footer";
+import { useAuth } from "@library/AuthContext";
 
 // LAYOUT 1
 export default function Lay1({
@@ -27,13 +28,13 @@ export default function Lay1({
           {children}
         </div>
       </section> 
-      <Footer />
     </>
   )
 }
 
 // SIDEBAR
 function Sidebar(props){
+  const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const toogleSidebar = () => {
     const rev = !isOpen;
@@ -69,8 +70,16 @@ function Sidebar(props){
             submenu={link.submenu}
           />
         })}
-       <ProfileDetails />
+        <NavLinkMenu
+          name="Setting"
+          icon="bx bx-cog"
+          submenu={[
+            {name: user ? 'Keluar': 'Masuk', url: user ? '/jangan-lupa-mampir-lagi': '/welcome'},
+          ]}
+        />
      </ul>
+     <ProfileDetails />
+
    </section>
  )
 }
@@ -162,20 +171,18 @@ function NavLinkMenu({name, icon, submenu}){
 
 // PROFILE DETAILS
 function ProfileDetails(){
+  const { user } = useAuth();
+
  return (
-   <li>
-     <div className={styles['profile-details']}>
-       <div className={styles['profile-content']}>
-         <img 
-          src="/avatar.png" 
-          alt="profileImg" />
-       </div>
-       <div className={styles['name-job']}>
-         <div className={styles['profile-name']}>Prem Shahi</div>
-         <div className={styles['job']}>Web Desginer</div>
-       </div>
-       <i className='bx bx-log-out'></i>
-     </div>
-   </li>
+    <div className={styles['profile-details']}>
+      <div className={styles['profile-content']}>
+        <img 
+          src={user?.photoURL || '/avatar-batman.png'} 
+        alt={user?.displayName || 'Profile Image'} />
+      </div>
+      <div className={styles['profile-name']}>
+        {user?.displayName}
+      </div>
+    </div>
  );
 }

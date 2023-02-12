@@ -9,4 +9,6 @@
 :root {
   --background-color: black;
   --text-color: hsl(0, 0%, 100%);
+  --bg-gradient-green: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+  --bg-gradient-black: linear-gradient(to right, #434343 0%, black 100%);
 }

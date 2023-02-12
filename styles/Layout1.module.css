@@ -230,9 +230,10 @@
   width: 260px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 12px 0;
   transition: all 0.5s ease;
+  
 }
 .sidebar.close .profile-details{
   background: none;
@@ -256,21 +257,24 @@
 .sidebar.close .profile-details img{
   padding: 10px;
 }
-.sidebar .profile-details .profile-name,
-.sidebar .profile-details .job{
+.sidebar .profile-details .profile-name {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  padding-right: 10px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.sidebar.close .profile-details i,
+/* .sidebar .profile-details .job */
+
 .sidebar.close .profile-details .profile-name,
 .sidebar.close .profile-details .job{
   display: none;
 }
-.sidebar .profile-details .job{
+/* .sidebar .profile-details .job{
   font-size: 12px;
-}
+} */
 
 /* HOME OR CONTENT SECTION */
 .home-section{

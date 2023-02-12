@@ -1,9 +1,11 @@
 import '@styles/global.css'
 import Head from 'next/head'
+import { UserContext } from '@library/context'
+import { AuthContextProvider } from '@library/AuthContext'
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <AuthContextProvider>
       <Head>
        <meta charSet="UTF-8" />
        <meta 
@@ -20,6 +22,6 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-    </>
+    </AuthContextProvider>
   )
 }
