@@ -1,9 +1,15 @@
+import MetaTags from "@components/Metatags";
 import Lay1 from "@layouts/Lay1";
 import { MYBLOG } from "@layouts/Lay1data";
 
 export default function Better(){
  return (
   <Lay1 {...MYBLOG}>
+   <MetaTags 
+    title="This Make Me Better in My Life"
+    description="ini ada beberapa catatan buat aku dan temen2 juga bisa, jadi ada bebearpa hal yang bikin aku jadi lebih produktif, jadi better person than before. Aku share biar aku juga bisa konsisten jalanin ini dan bisa buat referensi buat temen2 juga disini. Semoga bermanfaat. "
+   />
+
    <h1>📒 MAKE ME BETTER</h1>
    <p>
    Yeah, ada beberapa hal yang bikin gua jadi lebih baik lagi buat jalanin kehidupan..
@@ -13,7 +19,7 @@ export default function Better(){
    <p>
     aku pernah dimasa aku selalu ngeluh kenapa aku gagal mulu, kenapa mereka yang usahanya kek biasa2 aja lebih sukses, 
     aku takut buat ambil posisi/kesempatan, aku mulai nyalahin kondisi, aku gak percaya diri, aku gak punya rencana kedepan, 
-    yeah singkat nya sampah lah aku tu 🚮, tai-lah klo kasarnya 💩
+    yeah singkat nya sampah lah aku tu...
     <br/><br/>
     aku cukup beruntung, walau aku juga nyesel baru tau diwaktu itu, klo selama ini tuh yang bikin gua berubah jadi sampah gk guna tuh kuncinya ada di mindset gua,
     gua sadar klo yang hilang tuh mindset gua, mindset buat jadi lebih baik, mindset berani, mindset sukses, mindset mau kerja keras, mindset dewasa, mindset posive, and on and on...

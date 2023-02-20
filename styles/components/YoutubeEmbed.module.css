@@ -1,0 +1,15 @@
+.youtube-embed {
+ display: flex;
+ justify-content: center;
+}
+
+.youtube-embed iframe {
+ width: 100%;
+}
+
+@media (min-width: 601px) {
+ .youtube-embed iframe {
+  width: 560px;
+  height: 315px;
+ }
+}
