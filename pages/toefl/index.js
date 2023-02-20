@@ -1,10 +1,10 @@
 import MetaTags from "@components/Metatags";
 import Lay1 from "@layouts/Lay1";
-import { TOEFL_LAYOUT_DATA } from "@layouts/Toefl";
+import { TOEFLAPP } from '@layouts/Lay1data';
 
 export default function Toefl(){
  return (
-   <Lay1 {...TOEFL_LAYOUT_DATA}>
+   <Lay1 {...TOEFLAPP}>
     <MetaTags 
       title="📒 Belajar TOEFL - Website Belajar TOEFL GRATIS"
       description="Hi semuanya, aku Fikri, disini aku share materi buat belajar TOEFL. Semoga bermanfaat dan suskes dapet nilai TOEFL yang diinginkan. 💪🏻"

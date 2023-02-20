@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NextLink from "next/link";
 import styles from "@styles/Layout1.module.css";
-import Footer from "@components/Footer";
 import { useAuth } from "@library/AuthContext";
 
 // LAYOUT 1

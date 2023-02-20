@@ -1,11 +1,12 @@
 import MetaTags from '@components/Metatags';
 import styles from '@styles/Home.module.css';
 import Lay1 from '@layouts/Lay1';
-import { HOME_LAYOUT_DATA } from "@layouts/Home";
+import { HOMEDATA } from '@layouts/Lay1data';
+
 
 export default function Home(){
   return (
-    <Lay1 nocontent {...HOME_LAYOUT_DATA}>
+    <Lay1 nocontent {...HOMEDATA}>
       <MetaTags 
         title='Fikri Ali Fata 🏀'
         description='Kenalin aku Fikri, ini website aku 🙂 Semoga bermanfaat.'

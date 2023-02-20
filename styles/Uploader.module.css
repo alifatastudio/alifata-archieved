@@ -1,0 +1,27 @@
+.uploader {
+ min-height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.uploader div {
+ padding: 15px;
+ background-color: black;
+ border-radius: 10px;
+}
+.uploader h3 {
+ text-align: center;
+ margin-bottom: 10px;
+}
+.uploader input {
+ padding: 10px;
+ background-color: #181818;
+}
+.uploader button {
+ padding: 8px;
+ cursor: pointer;
+}
+.uploader button:hover {
+ color: #fff;
+ background-color: #181818;
+}

@@ -1,4 +1,26 @@
-export const TOEFL_LAYOUT_DATA = {
+export const HOMEDATA = {
+  links: [
+   {name: "Home", url: "/", icon: "bx bxs-home"},
+   {name: 'Blog', url: '/blog', icon: 'bx bxl-blogger'},
+   {name: "App", url: null, icon: "bx bx-devices", submenu: [
+    {name: "LEARN TOEFL", url: "/toefl"},
+  ]},
+  ]
+ }
+
+export const MYBLOG = {
+ name: "MY BLOG",
+ subname: "by Alifata",
+ links: [
+  {name: "ALIFATA.COM", url: "/", icon: "bx bxs-meteor"},
+  {name: "About", url: "/blog", icon: "bx bxs-notepad bx-tada"},
+  {name: "Others", url: null, icon: "bx bxs-cube", submenu: [
+    {name: "Make Me Better", url: '/blog/better'}
+  ]},
+ ]
+}
+
+export const TOEFLAPP = {
  logo: {
    logoURL: "/logo.png",
    txtALT: "Logo Alifata",
@@ -6,8 +28,8 @@ export const TOEFL_LAYOUT_DATA = {
  name: "LEARN TOEFL",
  subname: "by Alifata",
  links: [
-   {name: "ALIFATA", url: "/", icon: "bx bxs-meteor bx-tada"},
-   {name: "Home TOEFL", url: "/toefl", icon: "bx bxs-home"},
+   {name: "ALIFATA.COM", url: "/", icon: "bx bxs-meteor"},
+   {name: "ABOUT", url: "/toefl", icon: "bx bxs-notepad bx-tada"},
    {name: "LISTENING", url: null, icon: "bx bx-book-reader", submenu: [
      {name: "Sub Menu 1", url: "/apa-itu-toefl"},
      {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},

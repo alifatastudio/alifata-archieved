@@ -1,0 +1,21 @@
+.protected-route {
+ display: flex;
+ justify-content: center;
+}
+
+.protected-route div {
+ text-align: center;
+}
+
+.protected-route button {
+ width: 100%;
+ padding: 10px;
+ cursor: pointer;
+ color: black;
+ background-color: #fff;
+}
+
+.protected-route button:hover {
+ color: #fff;
+ background-color: black;
+}

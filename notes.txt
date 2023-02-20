@@ -17,3 +17,6 @@
 
 📒 LOADER
 1. https://loading.io/css/
+
+📒 PROGRESS BAR
+1. https://css-tricks.com/css3-progress-bars/
