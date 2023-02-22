@@ -49,9 +49,6 @@ export const TOEFLAPP = {
      {name: "Sub Menu 1", url: "/apa-itu-toefl"},
      {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
    ]},
-   {name: "PRACTICE", url: null, icon: "bx bxs-rocket", submenu: [
-     {name: "Sub Menu 1", url: "/apa-itu-toefl"},
-     {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
-   ]}
+   {name: "PRACTICE", url: '/toefl/exercise', icon: "bx bxs-rocket"}
  ]
 }

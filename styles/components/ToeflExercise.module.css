@@ -1,0 +1,84 @@
+.toefl-exercise .question {
+ width: 100%;
+ padding: 25px;
+ margin: 0px 0px 10px 0px;
+ background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+ border-radius: 10px;
+}
+.toefl-exercise .explanation {
+ width: 100%;
+ padding: 25px;
+ margin: 10px 0px 10px 0px;
+ background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
+ border-radius: 10px;
+}
+.question span {
+ font-size: 10px;
+}
+.question p {
+ margin: 10px 0 10px 0;
+}
+.question button {
+ position: relative;
+ width: 100%;
+ margin-top: 10px;
+ padding: 10px;
+ text-align: left;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+	transition: all 0.5s;
+}
+.question button:hover {
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+.question .correctOptionId {
+ color: white;
+ background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.question .wrongOptionId {
+ color: white;
+ background: radial-gradient(486px at 37.5% -17.2%, rgb(255, 2, 2) 0%, rgb(254, 78, 172) 90%);
+}
+.question input {
+ width: 100%;
+ border: none;
+ border-radius: 5px;
+ margin-top: 15px;
+ padding: 15px;
+}
+.explanation .choose-your-answer {
+ text-align: center;
+ font-size: 25px;
+ font-weight: 500;
+}
+.explanation .choose-your-answer span {
+ font-size: 50px;
+}
+
+@media (min-width: 601px) {
+ .toefl-exercise {
+  display: flex;
+  justify-content: space-around;
+ }
+ .toefl-exercise .question {
+  min-height: 300px;
+  width: 45%;
+  margin: 0;
+ }
+ .toefl-exercise .explanation {
+  min-height: 300px;
+  width: 45%;
+  margin: 0;
+ }
+}
+@media (min-width: 993px) {
+ .toefl-exercise .question {
+  min-height: 350px;
+  width: 40%;
+ }
+ .toefl-exercise .explanation {
+  min-height: 350px;
+  width: 40%;
+ }
+}

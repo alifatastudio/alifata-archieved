@@ -1,0 +1,9 @@
+.embed-pdf {
+ display: flex;
+ justify-content: center;
+}
+
+.embed-pdf object {
+ width: 100%;
+ height: 500px;
+}
