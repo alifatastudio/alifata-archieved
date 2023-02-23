@@ -1,10 +1,10 @@
 import MetaTags from "@components/Metatags";
 import Lay1 from "@layouts/Lay1";
-import { TOEFLAPP } from '@layouts/Lay1data';
+import { TOEFLABLE } from '@layouts/Lay1data';
 
 export default function Toefl(){
  return (
-   <Lay1 {...TOEFLAPP}>
+   <Lay1 {...TOEFLABLE}>
     <MetaTags 
       title="📒 Belajar TOEFL - Website Belajar TOEFL GRATIS"
       description="Hi semuanya, aku Fikri, disini aku share materi buat belajar TOEFL. Semoga bermanfaat dan suskes dapet nilai TOEFL yang diinginkan. 💪🏻"
@@ -38,7 +38,7 @@ export default function Toefl(){
       Klo misal kamu pemula dan ngerasa susah gak bisa, gpp, namanya juga manusia. Penting berusaha terus, ini aku nulis tulisan ini juga masih kesusahan dapetin nilai TOEFL yang ideal. 
       Udah beberapa ikutan tes atau tes simulasi TOEFL masih dibawah targetku. But it's OK, usaha lagi, semangat 💪🏻💪🏻
     </p>
-    <h2>LEARN TOEFL by Alifata</h2>
+    <h2>TOEFLABLE by Alifata</h2>
     <p>
       App ini dibuat sama aku buat sarana belajar bahasa inggris fokusnya ke dapetin skor TOEFL bagus.
       <br/><br/>

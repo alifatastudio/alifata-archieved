@@ -293,10 +293,24 @@
   padding: 10px 50px 55px 150px;
   color: white; 
 }
-
-.home-section .home-content h1,
-.home-section .home-content h2 {
+.home-content h1,
+.home-content h2 {
   margin: 30px 0 10px 0;
+}
+.home-content p {
+  text-justify: inter-word;
+}
+.home-content ul {
+  padding-left: 20px;
+}
+.home-content .title {
+  padding: 5px;
+  border-radius: 5px;
+}
+.home-content .title.dark-pink {
+  color: #000;
+  background: var(--dark-pink);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
 }
 
 /* RESPONSIVE 

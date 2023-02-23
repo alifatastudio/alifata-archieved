@@ -3,7 +3,7 @@ export const HOMEDATA = {
    {name: "Home", url: "/", icon: "bx bxs-home"},
    {name: 'Blog', url: '/blog', icon: 'bx bxl-blogger'},
    {name: "App", url: null, icon: "bx bx-devices", submenu: [
-    {name: "LEARN TOEFL", url: "/toefl"},
+    {name: "TOEFLABLE", url: "/toeflable"},
   ]},
   ]
  }
@@ -23,32 +23,28 @@ export const MYBLOG = {
  ]
 }
 
-export const TOEFLAPP = {
+export const TOEFLABLE = {
  logo: {
    logoURL: "/logo.png",
    txtALT: "Logo Alifata",
  },
- name: "LEARN TOEFL",
+ name: "TOEFLABLE",
  subname: "by Alifata",
  links: [
    {name: "ALIFATA.COM", url: "/", icon: "bx bxs-meteor"},
-   {name: "ABOUT", url: "/toefl", icon: "bx bxs-notepad bx-tada"},
+   {name: "ABOUT", url: "/toeflable", icon: "bx bxs-notepad bx-tada"},
    {name: "LISTENING", url: null, icon: "bx bx-book-reader", submenu: [
      {name: "Sub Menu 1", url: "/apa-itu-toefl"},
-     {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
    ]},
    {name: "STRUCTURE", url: null, icon: "bx bxs-edit-alt", submenu: [
-     {name: "Sub Menu 1", url: "/apa-itu-toefl"},
-     {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
+     {name: "Pendahuluan", url: "/toeflable/structure"},
    ]},
    {name: "READING", url: null, icon: "bx bxs-chat", submenu: [
      {name: "Sub Menu 1", url: "/apa-itu-toefl"},
-     {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
    ]},
    {name: "WRITING", url: null, icon: "bx bxs-megaphone", submenu: [
      {name: "Sub Menu 1", url: "/apa-itu-toefl"},
-     {name: "Sub Menu 2", url: "/apa-itu-toefl-2"},
    ]},
-   {name: "PRACTICE", url: '/toefl/exercise', icon: "bx bxs-rocket"}
+   {name: "PRACTICE", url: '/toeflable/exercise', icon: "bx bxs-rocket"}
  ]
 }
