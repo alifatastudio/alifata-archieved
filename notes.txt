@@ -1,3 +1,7 @@
+📒 REACT BOOSTARSP
+1. https://reacthustle.com/blog/nextjs-setup-multiple-themes-react-bootstrap
+2. https://reacthustle.com/blog/how-to-add-react-bootstrap-to-nextjs
+
 📒 DARK THEME REFERENCE
 1. https://blog.karenying.com/posts/50-shades-of-dark-mode-gray
 

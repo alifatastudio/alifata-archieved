@@ -39,6 +39,7 @@ function Sidebar(props){
     const rev = !isOpen;
     setIsOpen(rev);
   }
+  console.log(user)
 
   const { logo, name, subname, links } = props;
 
@@ -176,7 +177,7 @@ function ProfileDetails(){
     <div className={styles['profile-details']}>
       <div className={styles['profile-content']}>
         <img 
-          src={user?.photoURL || '/avatar-batman.png'} 
+          src={user?.photoURL || 'https://firebasestorage.googleapis.com/v0/b/alifataspace.appspot.com/o/U5Qd7dZhkjZzyIFMBM1prr7vZV13%2F1676275714310.png?alt=media&token=9d91a479-ccaf-47ac-be3c-df9a1792fbdc'} 
         alt={user?.displayName || 'Profile Image'} />
       </div>
       <div className={styles['profile-name']}>

@@ -6,9 +6,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "firebase": "^9.17.1",
     "next": "^13.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.58.3"
   }
 }

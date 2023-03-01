@@ -1,4 +1,4 @@
-import '@styles/global.css'
+import '@styles/global.scss'
 import Head from 'next/head'
 import { UserContext } from '@library/context'
 import { AuthContextProvider } from '@library/AuthContext'

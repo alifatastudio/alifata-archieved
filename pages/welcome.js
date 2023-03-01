@@ -2,13 +2,13 @@ import MetaTags from "@components/Metatags";
 import { useAuth } from "@library/AuthContext";
 import styles from "@styles/Welcome.module.css";
 import Lay1 from "@layouts/Lay1";
-import { HOME_LAYOUT_DATA } from "@layouts/Home";
+import { HOMEDATA } from "@layouts/Lay1data";
 
 export default function Welcome(props){
  const { user } = useAuth();
 
  return (
-  <Lay1 nocontent {...HOME_LAYOUT_DATA}>
+  <Lay1 nocontent {...HOMEDATA}>
    <MetaTags
     title="🙂 Masuk ke Alifata.com"
     description="Daftar atau masuk ke akun kamu untuk dapat mengakses berbagai fitur dan banyak hal di alifata.com, Semoga bermanfaat 🙂"

@@ -9,9 +9,9 @@ export default function Blog(){
     title='📒 MY BLOG - Fikri Ali Fata 🏀'
     description='Selamat datang di blog aku guys, jadi ini beberapa tulisan atau catetan dari aku yang aku share disini. Ada banyak hal mulai dari kehidupan, karir, politik, tips-tips, dan sejenisnya. Tulisan nya juga aku kategoriin di samping biar mudah dipetakan. Semoga bermanfaat.'
    />
-   <h1>📒 Welcome -  Blog ALIFATA</h1>
+   <h1>📒 WELCOME</h1>
    <p>
-    Jadi ini adalah tulisan-tulisan apapun dari aku yang aku share disini. Tulisan-nya random bisa tips-tips, materi, pelajaran, politik, pendapat, dan sejenisnya. Nanti tulisan ini aku kategoriin juga, temen-temen bisa milih di menu samping sesua kategori. Semoga bermanfaat 🙂.
+    Tulisan-nya random bisa tips-tips, materi, pelajaran, politik, pendapat, dan sejenisnya. Nanti tulisan ini aku kategoriin juga, temen-temen bisa milih di menu samping sesua kategori. Semoga bermanfaat 🙂.
    </p>
    <h2>Tujuan</h2>
    <p>

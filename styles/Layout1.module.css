@@ -170,9 +170,12 @@
   color: #fff;
   font-size: 15px;
   padding: 5px;
-  white-space: nowrap;
-  opacity: 0.6;
+  /* white-space: nowrap; */
+  opacity: 1;
   transition: all 0.3s ease;
+}
+.sidebar.close .nav-links li .sub-menu a {
+  white-space: nowrap;
 }
 .sidebar .nav-links li .sub-menu a:hover{
   opacity: 1;
@@ -308,7 +311,7 @@
   border-radius: 5px;
 }
 .home-content .title.dark-pink {
-  color: #000;
+  color: #181818;
   background: var(--dark-pink);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
 }
@@ -316,7 +319,7 @@
 /* RESPONSIVE 
 @media (min-width: 601px) {}
 @media (min-width: 993px) {}
-@media (max-width: 1205px) {}
+@media (min-width: 1205px) {}
 @media (max-width: 600px) {}
 @media (max-width: 768px) {}
 */
